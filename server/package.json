@@ -1,0 +1,19 @@
+{
+  "name": "danmu-server",
+  "version": "1.0.0",
+  "description": "弹幕666服务端",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "forever start index.js",
+    "stop": "forever stop index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "log4js": "^3.0.6",
+    "request": "^2.88.0",
+    "ws": "^6.1.0"
+  }
+}
