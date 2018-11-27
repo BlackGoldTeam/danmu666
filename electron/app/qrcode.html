@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>弹幕666二维码</title>
+</head>
+<style>
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #qrcode-container{
+        background: #FFF;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    #qrcode {
+        padding: 5px;
+        width: 190px;
+        height: 190px;
+    }
+</style>
+
+<body style="-webkit-app-region: drag">
+    <div id="qrcode-container">
+        <img style="display: none" id="qrcode" />
+    </div>
+    
+</body>
+<script>
+    const ipcRenderer = require('electron').ipcRenderer;
+    ipcRenderer.on('qrcodeBase64', function (event, data) {
+        const qrcode = document.getElementById('qrcode');
+        qrcode.src = data;
+        qrcode.style.display = 'block';
+    });
+</script>
+
+</html>

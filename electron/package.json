@@ -1,0 +1,41 @@
+{
+  "name": "barrage",
+  "version": "1.0.0",
+  "description": "微信扫码，即可发表你的666",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack:win": "electron-builder --win --ia32",
+    "pack:mac": "electron-builder --mac"
+  },
+  "keywords": [
+    "danmu",
+    "barrage"
+  ],
+  "build": {
+    "appId": "com.Barrage.app",
+    "productName": "弹幕666",
+    "copyright": "Copyright © 2018 ${author}",
+    "electronVersion": "3.0.4",
+    "mac": {
+      "icon": "ico/favicon.icns",
+      "artifactName": "${productName}_Setup_${version}.${ext}"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "ico/favicon.ico",
+      "artifactName": "${productName}_Setup_${version}.${ext}"
+    }
+  },
+  "author": "BlackGoldTeam",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.4",
+    "electron-builder": "^20.33.2"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "electron-store": "^2.0.0",
+    "ws": "^6.1.2"
+  }
+}
