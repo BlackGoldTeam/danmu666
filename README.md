@@ -1,6 +1,11 @@
 # danmu666
 基于Electron + nodejs + 小程序 实现弹幕小工具
 
+扫码即用，十分方便
+
+## 下载体验
+[抢先体验版](https://github.com/BlackGoldTeam/danmu666/releases)
+
 ## 目录说明
 * electron - Electron弹幕接收端
 * server - websocket服务端
@@ -12,10 +17,8 @@
 * [基于Electron + nodejs + 小程序 实现弹幕小工具（中篇)](https://juejin.im/post/5bfbea396fb9a049c2321c5e)
 * [基于Electron + nodejs + 小程序 实现弹幕小工具（下篇)](https://juejin.im/post/5bfbdcf7e51d452d565015d5)
 
-## 下载体验
-[抢先体验版](https://github.com/BlackGoldTeam/danmu666/releases)
 
-##TODO
+## TODO
 * 支持发送图片
 * 不良信息过滤
 * 黑名单
