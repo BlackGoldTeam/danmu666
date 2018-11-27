@@ -3,3 +3,5 @@ server/config.js
 server/logs/
 electron/node_modules/
 electron/config.js
+wechat/project.config.json
+wechat/config.js

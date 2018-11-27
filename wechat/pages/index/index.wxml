@@ -1,0 +1,21 @@
+<!-- index.wxml -->
+<view class="container">
+  	<view class="userinfo">
+		<block wx:if="{{!hasUserInfo && canIUse}}">
+			<image class="logo" src="666.jpeg"></image>
+			<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+				微信授权
+			</button>
+		</block>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+	</view>
+	<form wx:if="{{hasUserInfo && scanWXACode}}" bindsubmit="formSubmit" class="form">
+		<input type="text" value="{{content}}"name="content" placeholder="输入你想要发送的弹幕"/>
+		<button formType="submit">发送</button>
+	</form>
+	<view wx:if="{{hasUserInfo && !scanWXACode}}" class="error-hint">扫码后才可以发送弹幕哦</view>
+  
+</view>

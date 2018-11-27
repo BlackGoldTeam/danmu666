@@ -1,0 +1,40 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  margin-top: 200rpx;
+  width: 450rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.form {
+  margin-top: 220rpx;
+}
+.form input {
+  width: 750rpx;
+  height: 108rpx;
+  padding: 0 64rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid#E9EAEC;
+  box-sizing: border-box;
+}
+button {
+  width: 654rpx;
+  height: 88rpx;
+  background: #1aae18;
+  margin: 48rpx auto 0;
+  color: #fff;
+}
+.error-hint {
+  margin-top: 300rpx;
+  color: #333;
+}
